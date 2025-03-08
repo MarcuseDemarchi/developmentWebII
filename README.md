@@ -18,6 +18,6 @@
 
 - bash
 - Copiar
-- git clone https://github.com/MarcuseDemarchi/DevelopmentWebII.git
+- git clone https://github.com/MarcuseDemarchi/developmentWebII.git
 
 ## Instruções de Uso: As atividades propostas podem ser encontradas no repositório, organizadas por pastas específicas de acordo com o tema de cada trabalho. Ao realizar modificações, é importante seguir as boas práticas de versionamento e commit, documentando adequadamente as alterações feitas.
