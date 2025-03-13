@@ -33,7 +33,7 @@ filepath: /C:/xampp/htdocs/developmentWebII/Activity/Activity-02/index.php -->
                     <br>
                     <input type="text" name="andress">
                     <br>
-                    <h2 class="subtitle_form">Endereços</h2>
+                    <h2 class="subtitle_form">Informações complementares</h2>
                     <label for="number_phone">Numero de telefone</label>
                     <br>
                     <input type="number" name="number_phone">
@@ -46,7 +46,7 @@ filepath: /C:/xampp/htdocs/developmentWebII/Activity/Activity-02/index.php -->
                     <br>
                     <input type="text" name="linkedin">
                     <br>
-                    <h2 class="subtitle_form">Endereço</h2>
+                    <h2 class="subtitle_form">Experiência e competências</h2>
                     <label for="experience">Descritivo de experiencia</label>
                     <br>
                     <input type="text" name="experience">  
