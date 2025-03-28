@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Calcular IMC</h1>
-    <form action="/imc/calculate" method="POST">
+    <form action="<?= route("calculaImc") ?>" method="POST">
         @csrf
         <label for="weight">Peso (kg):</label>
         <input type="number" name="weight" required>

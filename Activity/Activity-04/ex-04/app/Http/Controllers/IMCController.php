@@ -17,16 +17,12 @@ class IMCController extends Controller
         $weight = $request->input('weight');
         $height = $request->input('height');
 
-        try{
-            $imc = new IMC();
-            $imcValue = $imc->calculateIMC($weight, $height);
+        $imc = new IMC();
+        $imcValue = $imc->calculateIMC($weight, $height);
 
-            return view('imc.imc_result', [
-                'imc' => $imc->getIMCClassification($imcValue),
-                'imcValue' => $imcValue
-            ]);
-        }catch(\Exception $e){
-            return redirect()->back()->withErrors(['error' => 'Invalid input']);
-        }        
+        return view('imc.imc_result', [
+            'imc' => $imc->getIMCClassification($imcValue),
+            'imcValue' => $imcValue
+        ]);
     }
 }

@@ -10,8 +10,9 @@ Route::get('/', function () {
 });
 
 Route::get('/imc', [IMCController::class, 'index']);
-Route::post('/imc/calculate', [IMCController::class, 'returnIMC']);
+Route::post('/imc/calculate', [IMCController::class, 'returnIMC'])->name('calculaImc');
 
-Route::resource('/sleep', SleepController::class);
+Route::get('/sleep_control', [SleepController::class, 'index']);
+Route::post('/imc/calcSleep', [SleepController::class, ''])->name('calculaImc');
 
-Route::resource('/travel-cost', TravelCostController::class);
+// Route::resource('/travel-cost', TravelCostController::class);

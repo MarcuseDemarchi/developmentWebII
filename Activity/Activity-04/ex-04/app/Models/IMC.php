@@ -21,11 +21,11 @@ class IMC extends Model
 
     public function calculateIMC($weigth, $height)
     {
-        if ($height <= 0 || $weight <= 0) {
+        if ($height <= 0 || $weigth <= 0) {
             throw new \Exception('Height and weight must be positive numbers.');
         }
 
-        $imc = $weight / ($height * $height);
+        $imc = $weigth / ($height * $height);
         return round($imc, 2);
     }
 }
