@@ -13,6 +13,7 @@ Route::get('/imc', [IMCController::class, 'index']);
 Route::post('/imc/calculate', [IMCController::class, 'returnIMC'])->name('calculaImc');
 
 Route::get('/sleep_control', [SleepController::class, 'index']);
-Route::post('/imc/calcSleep', [SleepController::class, ''])->name('calculaImc');
+Route::post('/imc/sleepCalculate', [SleepController::class, 'calcSleep'])->name('sleepCalculate');
 
-// Route::resource('/travel-cost', TravelCostController::class);
+Route::get('/travel_cost', [TravelCostController::class, 'index']);
+Route::post('/travel_cost/calculate', [TravelCostController::class, 'calculate'])->name('travelCalculate');

@@ -45,14 +45,40 @@ class calcSleep extends Model
                 }                      
                 break;                    
             case $age >= 6 && $age <= 13:
+                if ($sleep_time >= 9 && $sleep_time <= 11){
+                    return 'Sono Ideal para Idade Escolar';
+                }elseif ($sleep_time > 11){
+                    return 'Sono ultrapassou o recomendado de tempo para Idade Escolar'; 
+                }else{
+                    return 'Atenção : O tempo em questão é pouco para Idade Escolar';
+                }                         
                 break;            
             case $age >= 14 && $age <= 17:
+                if ($sleep_time >= 8 && $sleep_time <= 10){
+                    return 'Sono Ideal para Jovens Adultos';
+                }elseif ($sleep_time > 10){
+                    return 'Sono ultrapassou o recomendado de tempo para Jovens Adultos'; 
+                }else{
+                    return 'Atenção : O tempo em questão é pouco para Jovens Adultos';
+                }                        
                 break;            
-            case $age >= 18 && $age <= 25:
-                break;
-            case $age >= 26 && $age <= 64:
-                break;
+            case ($age >= 18 && $age <= 25) || ($age >= 26 && $age <= 64):
+                if ($sleep_time >= 7 && $sleep_time <= 9){
+                    return 'Sono Ideal para adultos';
+                }elseif ($sleep_time > 9){
+                    return 'Sono ultrapassou o recomendado de tempo para adultos'; 
+                }else{
+                    return 'Atenção : O tempo em questão é pouco para adultos';
+                }                        
+                break;    
             case $age >= 64:
+                if ($sleep_time >= 7 && $sleep_time <= 8){
+                    return 'Sono Ideal para idosos';
+                }elseif ($sleep_time > 8){
+                    return 'Sono ultrapassou o recomendado de tempo para idosos'; 
+                }else{
+                    return 'Atenção : O tempo em questão é pouco para idosos';
+                }     
                 break;                        
         } 
     }

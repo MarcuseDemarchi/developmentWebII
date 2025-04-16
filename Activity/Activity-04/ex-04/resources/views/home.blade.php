@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/css/estilo.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/css/styles.css', 'resources/js/app.js'])
     @endif
 </head>
 <body>

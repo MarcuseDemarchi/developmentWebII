@@ -13,7 +13,7 @@ class IMC extends Model
         } elseif ($imc >= 18.5 && $imc < 24.9) {
             return 'Peso normal';
         } elseif ($imc >= 25 && $imc < 29.9) {
-            return 'Sobrepeso';
+            return 'Sobrepeso';        
         } else {
             return 'Obesidade';
         }

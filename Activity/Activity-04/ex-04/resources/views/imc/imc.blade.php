@@ -11,7 +11,7 @@
         <input type="number" name="weight" required>
         <br>
         <label for="height">Altura (m):</label>
-        <input type="number" step="0.01" name="height" required>
+        <input type="number" name="height" required>
         <br>
         <button type="submit">Calcular</button>
     </form>

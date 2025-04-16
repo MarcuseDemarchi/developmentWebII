@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Calcular IMC</h1>
-    <form action="<?= route("calcSleep") ?>" method="POST">
+    <form action="<?= route("sleepCalculate") ?>" method="POST">
         @csrf
         <label for="age">Idade</label>
         <input type="number" name="age" required>
